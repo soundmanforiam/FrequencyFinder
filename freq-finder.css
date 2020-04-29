@@ -87,4 +87,11 @@ li {
         width: 100vw; */
         transform: rotate(90deg);
     }
+    .white {
+        height: 50vw;
+        width: 10vh;
+    }
+    ul {
+        width: max-content;
+    }
 }
