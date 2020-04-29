@@ -1,8 +1,8 @@
 // function scrollToCenter()
 // {
 //   let keyWidth = window.screen.width / 10;
-//   let c4Pos = keyWidth * 23
-//   document.getElementById('kbd-wrapper').scrollLeft = c4Pos;
+//   let c4Position = keyWidth * 23
+//   document.getElementById('keyboard').scrollLeft = c4Position;
 // }
 
 audio = new(window.AudioContext || window.webkitAudioContext)()
@@ -23,28 +23,4 @@ function playNote(frequency, volume, duration) {
     g.gain.value = volume
     o.start(0)
     o.stop(audio.currentTime + duration)
-}
-
-// media query event handler
-if (matchMedia) {
-    const mq = window.matchMedia("(min-width: 500px)");
-    mq.addListener(WidthChange);
-    WidthChange(mq);
-}
-
-// media query change
-function WidthChange(mq) {
-    if (mq.matches) {
-        // window width is at least 500px
-        let keyWidth = window.screen.width / 10;
-        let c4Pos = keyWidth * 23
-        document.getElementById('keyboard').scrollLeft = c4Pos;
-    } else {
-        // window width is less than 500px
-        let keyWidth = window.screen.height / 5.5;
-        let c4Pos = keyWidth * 23
-        document.getElementById('keyboard').scrollLeft = c4Pos;
-
-    }
-
 }

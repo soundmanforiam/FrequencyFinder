@@ -15,12 +15,6 @@ body {
     overflow-x: auto;
 }
 
-.kbd-wrapper {
-    overflow-x: auto;
-    overflow-y: scroll;
-    white-space: nowrap;
-}
-
 .freq {
     font-size: 20vw;
     color: white;
