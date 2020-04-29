@@ -94,6 +94,7 @@ li {
     .black {
         height: 27vw;
         width: 6vh;
+        margin: 0 -3vh 0 -3vh;
     }
     ul {
         width: max-content;
