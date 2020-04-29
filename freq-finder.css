@@ -98,5 +98,8 @@ li {
     }
     ul {
         width: max-content;
+        position: relative;
+        top: 0;
+        right: 0;
     }
 }
