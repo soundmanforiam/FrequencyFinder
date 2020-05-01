@@ -9,6 +9,7 @@ audio = new(window.AudioContext || window.webkitAudioContext)()
 
 function playNote(frequency, volume, duration) {
 
+    document.getElementById("freq").className = "freq";
     document.getElementById('freq').innerText = frequency + "hz";
     var halfPeriod = 1 / frequency / 2
     if (duration > halfPeriod) duration -= duration % halfPeriod
