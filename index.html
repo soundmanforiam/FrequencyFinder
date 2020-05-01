@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="container-fluid pl-0 pr-0 ml-0 mr-o w-100 h-100">
+    <div class="container pl-0 pr-0 ml-0 mr-o ">
         <div class="row">
             <div class="col-sm-12 ">
                 <ul class="keyboard d-flex flex-nowrap">
@@ -117,11 +117,14 @@
                     <li class="white" id="C8" onclick="playNote(4186, 100, 1)"><span>C8   </span></li>
                 </ul>
 
-                <div class="freq" id="freq"></div>
 
 
             </div>
         </div>
+    </div>
+
+    <div class="container-fluid freq-container" style="display: block;">
+        <h1 class="freq" id="freq">Play a note <br>to see <br>Frequency</h1>
     </div>
 
     <!-- Optional JavaScript -->
