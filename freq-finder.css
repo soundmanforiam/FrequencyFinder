@@ -8,36 +8,37 @@ body {
     background-color: #111 !important;
     color: #fff !important;
     transition: none !important;
+    width: 100vw !important;
+    height: 100vh;
+}
+
+.keyboard-container {
+    width: 100vw !important;
+    height: 55vh !important;
+    overflow-x: scroll !important;
 }
 
 .keyboard {
-    padding-left: 0px !important;
+    padding: 0px !important;
 }
 
 .instructions {
     color: white;
-    font-size: 5rem !important;
+    font-size: 3rem !important;
+    text-align: center !important;
 }
 
 .freq-container {
     transform: none;
-    /* text-align: center !important; */
     width: 100vw;
-    /* border: 1px solid white; */
     position: relative;
 }
 
 .freq {
-    font-size: 10rem !important;
+    font-size: 8rem !important;
     line-height: 1.5;
     color: white;
-    position: fixed;
-    /* bottom: 0px; */
-    /* -webkit-transform: translateZ(0); */
-    -webkit-transform: none !important;
-    transform: none !important;
-    /* left: 0px; */
-    contain: none !important;
+    text-align: center !important;
 }
 
 li {
@@ -98,14 +99,5 @@ li {
         height: 25vh;
         width: 10vw;
         margin: 0 -5vw 0 -5vw;
-    }
-    .freq-container {
-        transform: none;
-    }
-    .freq {
-        /* text-align: center; */
-        position: fixed;
-        /* width: auto;
-        bottom: auto; */
     }
 }
